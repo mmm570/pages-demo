@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*{
+	outline: 1px solid black;
+}*/
+body{
+    margin: 42px auto;
+    width: 940px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu div{
+    display: flex;
+    flex-direction: row;
+}
+.menu div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 215px;
+    align-items: center;
+}
+.menu div ul li a{
+    font-size: 16px;
+    font-family: "PingFang TC";
+    text-decoration: none;
+    color: #3F5D45;
+}
+.imgmain{
+    max-width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.logo{
+    height: 40px;
+}
+.main{
+    display: flex;
+}
+.main ul li{
+    text-align: center;
+    width: 298px;
+    height: 63px;
+    line-height: 65px;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+#li-color{
+    background-color:#3F5D45 ;
+    color: #EAF0ED;
+}
+.main ul li:hover{
+    background-color:#EAF0ED;
+}
+.allproducts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    position: relative;
+    width: 300px;
+    margin-left: 15px;
+}
+
+.product-label{
+    position: absolute;
+    writing-mode: vertical-rl;
+    width: 36px;
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    left:10px;
+    letter-spacing: 5px;
+}
+.product-love{
+    position:absolute;
+    writing-mode: vertical-rl;
+    left: 270px;
+    top: 15px;
+}
+.product-love:hover{
+    border: 2px solid #3F5D45;
+}
+
+.product img{
+    margin: 0px;
+}
+.product-text{
+    text-align: center;
+    width: 300px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-text p{
+    border-left:1px solid #EAF0ED ;
+    border-right:1px solid #EAF0ED ;
+    height: 56px;
+    width: 150px;
+    line-height: 56px;
+}
+.product a{
+    display: block;
+    width: 300px;
+    height: 56px;
+    text-decoration: none;
+    background: #EAF0ED;
+    color: #3F5D45;
+    line-height: 56px;
+    text-align: center;
+}
+.product a:hover{
+    background: #3F5D45;
+    color: white;
+}
+.page{
+    display: flex;
+    justify-content: end;
+    margin-top: 60px;
+}
+.page img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+#next-page:hover{
+    background: #EAF0ED;
+}
+.page a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.page a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border:1px solid #EAF0ED ;
+    text-decoration: none;
+    font-family: "PingFang TC";
+    font-size: 20px;
+    color: #3F5D45;
+}

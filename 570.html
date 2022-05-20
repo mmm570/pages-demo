@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/all.js"></script>
+</head>
+<body>
+	<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表單說明</title>
+</head><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表單說明</title>
+</head>
+<body style="background-color:#FFE9E9;width: 1400px;margin: auto;">
+<header style="background-color:pink; height:60px; text-align:center;line-height:60px;color:white"><h1>個人基本資料</h1></header>
+<br>
+    <fieldset>
+        <label for=pname>姓名：</label>
+        <input id=pname type=text name=pname required><p>
+
+		<label for=height>身高：</label>
+        <input id=height type=text name=height required><p>
+		<label for=weight>體重：</label>
+        <input id=weight type=text name=weight required><p>
+
+		<label for=memo>備註:</label>
+      <textarea id=memo type=text name=memo cols=60 rows=7></textarea><p>
+      <input onclick="sayHello()" type=submit value=送出>
+    </fieldset>
+<p id='result'></p>
+<script>
+	function sayHello() {
+		var name = document.getElementById("pname").value;
+		var height = document.getElementById("height").value;
+		var weight = document.getElementById("weight").value;
+		var memo = document.getElementById("memo").value;
+		var bmi =weight/((height/100)*(height/100))
+		bmi = bmi.toFixed(2);
+		document.getElementById("result").innerHTML =
+			"姓名："+name+'\n'+"身高："+height+'\n'+"體重："+weight+'\n'+"BMI："+bmi+'\n'+"備註："+memo;
+	}
+</script>
+
+</body>
+</html>
